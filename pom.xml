@@ -206,10 +206,6 @@
 
                         <doctitle>${project.name} API Reference (${project.version})</doctitle>
                         <windowtitle>${project.name} API Reference (${project.version})</windowtitle>
-                        <links>
-                            <link>http://download.oracle.com/javase/6/docs/api</link>
-                            <link>http://google-web-toolkit.googlecode.com/svn/javadoc/2.2</link>
-                        </links>
                         <encoding>UTF-8</encoding>
                         <locale>en_US</locale>
                         <linksource>true</linksource>
@@ -373,6 +369,8 @@
                         </executions>
                         <configuration>
                             <doclint>none</doclint>
+                            <links combine.self="override"/>
+                            <detectOfflineLinks>false</detectOfflineLinks>
                         </configuration>
                     </plugin>
                     <plugin>
