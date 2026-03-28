@@ -24,7 +24,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.fusesource.restygwt</groupId>
+        <groupId>org.roda-community</groupId>
         <artifactId>restygwt-examples</artifactId>
         <version>2.2.11-keeps</version>
     </parent>
