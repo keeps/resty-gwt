@@ -20,7 +20,7 @@ jobs:
           server-password: MAVEN_PASSWORD
 
       - name: Import GPG key
-        run: echo "$GPG_PRIVATE_KEY" | gpg --batch --import
+        run: echo "$GPG_PRIVATE_KEY" | base64 --decode | gpg --batch --import
         env:
           GPG_PRIVATE_KEY: ${{ secrets.MAVEN_CENTRAL_GPG_PRIVATE_KEY }}
 
